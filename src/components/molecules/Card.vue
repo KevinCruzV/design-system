@@ -8,27 +8,29 @@
         <div class="card-input">
             <div class="card-input--username">
                 <label for="">Username</label>
-                <input type="text">
+                <input type="text" placeholder="John Doe">
             </div>
             <div class="card-input--password">
                 <label for="">Password</label>
-                <input type="text">
+                <input type="text" placeholder="********">
+                <span class="card-input--icon"></span>
             </div>
         </div>
         <div class="card-option">
             <div class="card-option--checkbox">
-                <input type="checkbox">
-                <label for="">Remember me?</label>
+                <input type="checkbox" id="remember-checkbox">
+                <label for="remember-checkbox">Remember me?</label>
             </div>
-            <a href="">Forgot your password</a>
+            <a href="/resetpassword">Forgot your password</a>
         </div>
-        <div class="card-cta">
-            <button>Sign In</button>
-        </div>
+        <a href='' class="card-cta">
+            <span>Sign In</span>
+            <span class="card-cta--icon"></span>
+        </a>
     </div>
-    <div>
-        <a href=""></a>
-    </div>
+    <a href="/signin" class="account-option">
+        <span>Not signed up ? Register you</span>
+    </a>
 </template>
 
 <script>

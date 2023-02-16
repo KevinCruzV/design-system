@@ -8,11 +8,7 @@ import Card from './components/molecules/Card.vue'
   <header>
   
     <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/signin">SignIn</RouterLink>
-        <RouterLink to="/resetpassword">Reset</RouterLink>
-      </nav>
+      
     </div>
   </header>
   

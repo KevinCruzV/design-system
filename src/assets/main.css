@@ -2,14 +2,14 @@
 
 /* colors  */
 :root {
-  --app-ultra-violet: #6C698D;
-  --app-silver: #BFAFA6;
-  --app-dim-gray: #6E6A6F;
-  --app-validate: #A1CF66;
-  --app-surface: #F3F3F3;
-  --app-error: #CF6679;
-  --app-black: #000000;
-  --app-white: #FFFFFF;
+	--app-ultra-violet: #6c698d;
+	--app-silver: #bfafa6;
+	--app-dim-gray: #6e6a6f;
+	--app-validate: #a1cf66;
+	--app-surface: #f3f3f3;
+	--app-error: #cf6679;
+	--app-black: #000000;
+	--app-white: #ffffff;
 }
 
 /* base  */
@@ -20,91 +20,134 @@
 	font-weight: normal;
 } */
 
-body{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #000000;
-
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: #000000;
 }
 
 h1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 46px;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	font-size: 46px;
 }
 
 h2 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 36px;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	font-size: 36px;
 }
 
 h3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 27px;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+	font-size: 27px;
 }
 
 h4 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: var(--app-black);
 }
 
 .card-container {
 	display: flex;
-  flex-direction: column;
-  gap: 46px;
-  box-shadow: 0 0 1px 1px var(--app-ultra-violet);
-  background-color: var(--app-white);
-  max-width: 600px;
-  padding: 80px 60px;
-  margin: 0 auto;
-  align-items: center;
+	flex-direction: column;
+	gap: 46px;
+	box-shadow: 0 0 1px 1px var(--app-ultra-violet);
+	background-color: var(--app-white);
+	max-width: 600px;
+	padding: 80px 60px;
+	margin: 100px auto;
+	align-items: center;
+	border-radius: 10px;
 }
 
 .card-banner {
-  display: flex;
-  flex-direction:column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.card-banner img{
-  width: 69px;
-  height: 69px;
+.card-banner img {
+	width: 69px;
+	height: 69px;
 }
 
 .card-banner span {
-  font-size: 14px;
+	font-size: 14px;
 }
 
-.card-input{
-  display: flex;
-  flex-direction: column;
-  gap: 46px;
-  padding: 0 90px;
-  width: 100%;
+.card-input {
+	display: flex;
+	flex-direction: column;
+	gap: 46px;
+	padding: 0 90px;
+	width: 100%;
 }
 
 .card-input--username,
 .card-input--password {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
 }
 
 .card-input--username input,
 .card-input--password input {
-  width: 100%;
+	width: 100%;
+	background-color: var(--app-surface);
+	border: none;
+	border-radius: 5px 5px 0px 0px;
+	padding: 23px 0 23px 16px;
+	position: relative;
+}
+
+.card-input--username input::placeholder {
+	content: "John Doe";
+}
+
+.card-input--password input::placeholder {
+	content: "********";
+	color: var(--app-black);
+	font-size: 14px;
+}
+
+.card-input--icon {
+	content: url("src/assets/icon/Eye.svg");
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 54%;
+	transform: translate(-54%);
 }
 
 .card-option {
-  display: flex;
-  gap: 20px;
-  padding: 0 90px;
+	display: flex;
+	gap: 37px;
+	padding: 0 90px;
+	font-size: 14px;
 }
+
+.card-option--checkbox {
+	gap: 5px;
+	display: flex;
+}
+
+.card-option--checkbox label,
+.card-option--checkbox input {
+	cursor: pointer;
+}
+
 /* .main-text{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -115,10 +158,31 @@ h4 {
 /* layout  */
 
 /* module  */
-.btn_default {
+
+.card-cta {
+	border: none;
+	background-color: #6c698d;
+	padding: 16px;
+	border-radius: 15px;
+	color: white;
+	transition: 0.3s ease;
+	width: fit-content;
+	position: relative;
 }
 
-.btn_default:hover {
+.card-cta span {
+	color: white;
+}
+.card-cta:hover {
+	background-color: #bfafa6;
+}
+
+.card-cta--icon {
+	content: url("src/assets/icon/Arrow.svg");
+}
+
+.account-option {
+	text-decoration: none;
 }
 
 .btn_default--disabled {
