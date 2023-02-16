@@ -19,7 +19,7 @@ import Card from './components/molecules/Card.vue'
   <RouterView />
 
   <main>
-    <Card class="container"></Card>
+    <Card></Card>
   </main>
 </template>
 
