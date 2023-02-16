@@ -85,6 +85,11 @@ a:visited {
 	font-size: 14px;
 }
 
+.banner--img{
+  content: url("src/assets/icon/Person.svg");
+  width: 69px;
+}
+
 .card-input {
 	display: flex;
 	flex-direction: column;
@@ -111,14 +116,16 @@ a:visited {
 	position: relative;
 }
 
-.card-input--username input::placeholder {
-	content: "John Doe";
+.card-input--username input::placeholder,
+.card-input--password input::placeholder {
+  color: var(--app-black);
+	font-size: 14px;
 }
 
-.card-input--password input::placeholder {
-	content: "********";
-	color: var(--app-black);
-	font-size: 14px;
+.card-input--username input:focus,
+.card-input--password input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--app-black);
 }
 
 .card-input--icon {
@@ -148,10 +155,6 @@ a:visited {
 	cursor: pointer;
 }
 
-/* layout  */
-
-/* module  */
-
 .card-cta {
 	border: none;
 	background-color: #6c698d;
@@ -160,7 +163,9 @@ a:visited {
 	color: white;
 	transition: 0.3s ease;
 	width: fit-content;
-	position: relative;
+	display: flex;
+	gap: 20px;
+	align-items: center;
 }
 
 .card-cta span {
@@ -172,12 +177,12 @@ a:visited {
 
 .card-cta--icon {
 	content: url("src/assets/icon/Arrow.svg");
+	width: 35px;
 }
 
 .account-option {
 	text-decoration: none;
-  display: flex;
-
+	display: flex;
 }
 
 .btn_default--disabled {

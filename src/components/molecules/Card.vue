@@ -1,7 +1,7 @@
 <template>
     <div class="card-container">
         <div class="card-banner">
-            <img src="src\assets\icon\Person.svg" alt="Icon">
+            <span class="banner--img"></span>
             <h3>Account Sign In</h3>
             <span>Join our team workspace</span>
         </div>
