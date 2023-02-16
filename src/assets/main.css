@@ -57,6 +57,11 @@ a:visited {
 	color: var(--app-black);
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+}
+
 .card-container {
 	display: flex;
 	flex-direction: column;
@@ -85,9 +90,9 @@ a:visited {
 	font-size: 14px;
 }
 
-.banner--img{
-  content: url("src/assets/icon/Person.svg");
-  width: 69px;
+.banner--img {
+	content: url("src/assets/icon/Person.svg");
+	width: 69px;
 }
 
 .card-input {
@@ -118,14 +123,14 @@ a:visited {
 
 .card-input--username input::placeholder,
 .card-input--password input::placeholder {
-  color: var(--app-black);
+	color: var(--app-black);
 	font-size: 14px;
 }
 
 .card-input--username input:focus,
 .card-input--password input:focus {
-  outline: none;
-  border-bottom: 1px solid var(--app-black);
+	outline: none;
+	border-bottom: 1px solid var(--app-black);
 }
 
 .card-input--icon {
@@ -183,6 +188,7 @@ a:visited {
 .account-option {
 	text-decoration: none;
 	display: flex;
+  align-self: center;
 }
 
 .btn_default--disabled {
