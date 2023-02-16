@@ -148,13 +148,6 @@ a:visited {
 	cursor: pointer;
 }
 
-/* .main-text{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  color: #000000;
-} */
-
 /* layout  */
 
 /* module  */
@@ -183,6 +176,8 @@ a:visited {
 
 .account-option {
 	text-decoration: none;
+  display: flex;
+
 }
 
 .btn_default--disabled {
